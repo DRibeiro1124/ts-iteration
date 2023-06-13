@@ -67,8 +67,7 @@ function stringyIndexes(strings: string[]): string[] {
  */
 
 function onlyTheEvenSurvive(numbers: number[]): number[] {
-  // Replace the code below with your own code
-  return []
+  return numbers.filter(number => number % 2 === 0)
 }
 
 /*
