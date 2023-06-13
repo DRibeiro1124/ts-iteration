@@ -108,8 +108,9 @@ function bestMoviesOfTheYear(
   movieObjectArray: Movie[],
   year: number
 ): string[] {
-  // Replace the code below with your own code
-  return []
+  return movieObjectArray
+    .filter(movie => movie.year === year && movie.score > 90)
+    .map(movie => movie.name)
 }
 
 /*
@@ -122,8 +123,7 @@ function bestMoviesOfTheYear(
  */
 
 function everyoneIsOdd(numbers: number[]): boolean {
-  // Replace the code below with your own code
-  return false
+  return numbers.every(number => number % 2 !== 0)
 }
 
 /*
