@@ -79,8 +79,7 @@ function onlyTheEvenSurvive(numbers: number[]): number[] {
  */
 
 function onlyTheEvenIndexedSurvive(numbers: number[]): number[] {
-  // Replace the code below with your own code
-  return []
+  return numbers.filter((number, index) => index % 2 === 0)
 }
 
 /*
